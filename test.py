@@ -13,5 +13,4 @@ def test_rename_exchange(tmp_path):
 
 def test_rename_exchange_on_error():
     with pytest.raises(OSError):
-        f = rename_exchange.rename_exchange("not_found", "not_found")
-        print(f)
+        rename_exchange.rename_exchange("not_found", "not_found")
