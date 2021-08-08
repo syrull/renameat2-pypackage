@@ -35,7 +35,7 @@ our `test.py`.
 # Testing
 
 ```console
-$ virutalenv venv && . ./venv/bin/activate
+$ virtualenv venv && . ./venv/bin/activate
 $ pip install -r dev-requirements.txt && pip install .
 $ pytest test.py
 ```
