@@ -7,7 +7,7 @@ def test_rename_exchange(tmp_path):
     f2 = tmp_path / "f2"
     f1.write_text("a")
     f2.write_text("b")
-    rename_exchange.rename_exchange(f1.__str__(), f2.__str__())
+    rename_exchange.rename_exchange(str(f1), str(f2))
     assert f2.read_text() == "a"
     assert f1.read_text() == "b"
 

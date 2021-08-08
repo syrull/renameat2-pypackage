@@ -1,6 +1,5 @@
 import sys
-import setuptools
-from distutils.core import setup, Extension
+from setuptools import Extension, setup
 
 if "--abi3" in sys.argv:
     module = Extension(

@@ -13,7 +13,8 @@
 #endif
 
 static PyObject *_rename_exchange(PyObject *self, PyObject *args) {
-    char *path1, *path2 = NULL;
+    char *path1 = NULL;
+    char *path2 = NULL;
 
     if(!PyArg_ParseTuple(args, "ss", &path1, &path2)) {
         return NULL;
@@ -23,7 +24,7 @@ static PyObject *_rename_exchange(PyObject *self, PyObject *args) {
         PyErr_SetFromErrno(PyExc_OSError);
         return NULL;
     } else {
-        return PyLong_FromLong(0);
+        return Py_BuildValue("");
     }
 }
 
