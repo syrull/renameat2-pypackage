@@ -12,12 +12,11 @@ used in any kind of production env.
 
 # Build
 
-## Building with abi3 wheel
+## Building the wheel 
 
 ```console
-$ python setup.py bdist_wheel --abi3
+$ pip wheel .
 ```
-The default build can be run without the `--abi3`.
 
 ## Building the manylinux wheels
 
