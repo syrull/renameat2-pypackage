@@ -16,12 +16,13 @@ if platform.python_implementation() == "CPython":
         cmdclass = {"bdist_wheel": bdist_wheel}
 
 setup(
-    name="rename_exchange",
+    name="renameat",
     version="1.0",
     description="This is a package for asottile's puzzle 02",
+    packages=["renameat"],
     ext_modules=[Extension(
-        "rename_exchange",
-        sources=["renameat.c"],
+        "_renameat",
+        sources=["_renameat.c"],
         define_macros=[("Py_LIMITED_API", None)],
         py_limited_api=True,
     )],

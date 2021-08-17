@@ -35,12 +35,12 @@ static struct PyMethodDef methods[] = {
 
 static struct PyModuleDef rename_exchange_module = {
     PyModuleDef_HEAD_INIT,
-    "rename_exchange",
+    "_renameat",
     NULL,
     -1,
     methods
 };
 
-PyMODINIT_FUNC PyInit_rename_exchange (void) {
+PyMODINIT_FUNC PyInit__renameat (void) {
     return PyModule_Create(&rename_exchange_module);
 }
