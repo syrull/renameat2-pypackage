@@ -1,8 +1,12 @@
-from pathlib import PosixPath
 import typing
+from pathlib import PosixPath
+
 import _renameat
 
-def rename_exchange(path1: typing.Union[str, PosixPath], path2: typing.Union[str, PosixPath]) -> None:
+
+def rename_exchange(
+    path1: typing.Union[str, PosixPath], path2: typing.Union[str, PosixPath]
+) -> None:
     if isinstance(path1, PosixPath):
         _path1 = str(path1.absolute())
     else:
